@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import user from '../images/user.jpg';
+import React from "react";
+import { Link } from "react-router-dom";
+import user from "../images/user.jpg";
 
 const ContactDetail = (props) => {
-  const { name , email } = props.location.state.contact;
+  const { name, email } = props.location.state.contact;
   return (
     <div className="main">
       <div className="ui card centered">
@@ -16,11 +16,13 @@ const ContactDetail = (props) => {
         </div>
       </div>
       <div className="center-div">
-        <Link>
-        <button className="ui button blue center">Back to Contact List</button>
+        <Link to="/">
+          <button className="ui button blue center">
+            Back to Contact List
+          </button>
         </Link>
       </div>
-    </div>   
+    </div>
   );
 };
 
